@@ -1,0 +1,15 @@
+﻿@using ActionMailer.Net.Mvc
+@model string
+
+@{
+    ViewBag.Title = "You've Received a Free Month!";
+    Layout = "../Shared/EmailLayout.cshtml";
+}
+
+Hey there @Model,
+<p style="margin-bottom:1em">
+You've received a free month of service for your mobile menu(s), compliments of Menu Dart. Enjoy!
+<p style="margin-bottom:1em">
+Cheers,
+<br>
+Your Friends at Menu Dart

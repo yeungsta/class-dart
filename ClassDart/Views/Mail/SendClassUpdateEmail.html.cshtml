@@ -1,0 +1,22 @@
+﻿@using ActionMailer.Net.Mvc
+@model ClassDart.Models.SendClassUpdateEmailViewModel
+
+@{
+    ViewBag.Title = "Update from class: " + Model.ClassName;
+    Layout = "../Shared/EmailLayout.cshtml";
+}
+
+Hey there @Model.Email,
+<p style="margin-bottom:1em">
+There's been a new update for @Model.ClassName.
+<p style="margin-bottom:1em">
+<a href="@Model.ClassLink">Click here to go to the class page.</a>
+<p style="margin-bottom:1em">
+Happy Learning,
+<br>
+Your Friends at Class Dart
+<p style="margin-bottom:1em">
+<br />
+Want to unsubscribe from this class? <a href="@Model.UnsubscribeLink">Do it here.</a>
+
+

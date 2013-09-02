@@ -1,0 +1,12 @@
+﻿<div data-role="footer" data-position="fixed">
+    @if (Request.IsAuthenticated)
+    {
+        <text><h3>
+        <span class="smallText">Editing.</span>&nbsp;
+        <a href="@Url.Action("Index", "Home")" data-role="button" data-theme="b" data-mini="true">Dashboard</a>&nbsp;
+        <a href="#popupFooterMoreMenu" data-rel="dialog" data-role="button" data-theme="c" data-mini="true" data-transition="none">More</a>&nbsp;
+        <a href="@Url.Action("LogOff", "Account")" data-role="button" data-theme="e" data-mini="true">Log Off</a>
+        </h3>
+        </text>
+    }
+</div><!-- /footer -->

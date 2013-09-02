@@ -1,0 +1,21 @@
+﻿@using ActionMailer.Net.Mvc
+@model ClassDart.Models.SendSubscribedEmailViewModel
+
+@{
+    ViewBag.Title = "You've Just Subscribed";
+    Layout = "../Shared/EmailLayout.cshtml";
+}
+
+Hey there @Model.Email,
+<p style="margin-bottom:1em">
+You've just subscribed to @Model.ClassName.
+<p style="margin-bottom:1em">
+You will receive email notifications when any updates to the class page are made by your instructor.
+<p style="margin-bottom:1em">
+Happy Learning,
+<br>
+Your Friends at Class Dart
+<p style="margin-bottom:1em">
+PS. If you didn't mean to subscribe, simply <a href="@Model.UnsubscribeLink">unsubscribe by clicking here.</a>
+
+

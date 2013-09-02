@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+<div style="background-color: #eeeeee; color: #696969; padding: 20px; font-family: Arial, Sans-Serif;">
+    <!-- todo: new logo
+    <header>
+        <img src="http://www.menudart.com/content/images/logo2.png" />
+        <p style="margin-bottom:1em">
+    </header>
+    -->
+
+    Hey there @Model.Email,
+    <p style="margin-bottom:1em">
+    There's been a new update for @Model.ClassName.
+    <p style="margin-bottom:1em">
+    <a href="@Model.ClassLink">Click here to go to the class page.</a>
+    <p style="margin-bottom:1em">
+    Happy Learning,
+    <br>
+    Your Friends at Class Dart
+    <p style="margin-bottom:1em">
+    <br />
+    Want to unsubscribe from this class? <a href="@Model.UnsubscribeLink">Do it here.</a>
+
+    <footer>
+    <p style="margin-bottom:1em"><br /><br />
+    <hr />
+    <p style="margin-bottom:1em">
+    <a href="mailto:support@classdart.com">Support</a> &middot;          
+    <a href="http://twitter.com/classdart" target="_blank">Twitter</a>
+    </p>        
+    <p style="margin-bottom:1em">&copy; Class Dart 2013</p>
+    </footer>
+</div>
+</body>
+</html>
+
